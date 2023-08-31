@@ -1,0 +1,43 @@
+front
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg
+coding ninja
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png
+iitd
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png
+contact 1
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png
+contact 2
+https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png
+contact section
+For the gradient, the leftmost color is '#2857a4' and rightmost color is '#403066'.
+
+..........//social section//........
+
+1. Linkedin - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png
+
+2. Stackoverflow - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png
+
+3. Google Plus - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000023_1549823282_google-plus-logo.png
+
+4. Facebook - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png
+
+5. Quora - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png
+The shadow used on the social icons is of the color - 'rgba(230,196,196,0.3)'.
+
+
+................//about section//..............
+1. The color of the shadow is 'lightgrey'.
+2. The color of the paragraph is 'grey'.
+3. The color of the highlighted text in the paragraph is '#2857a4'.
+
+............//portfollio section//..............
+Inside the portfolio section, on hovering over the images there should be some text that appears on the images with lightgrey background color.
+
+//........... resume responsive.......//
+For this, we will use 'Desktop First' approach and use 2 breakpoints - '572px' and '768px'
+
+// font awesome //
+
+ <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+  ></script>
