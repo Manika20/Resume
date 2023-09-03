@@ -130,19 +130,18 @@ body{
 
 .skill-outer
 {
-    height:14%;
-    width: 20%;
+    height:16%;
+    width: 18%;
     border-radius: 20px;
     box-shadow:1px 1px 1px 1px grey;
     padding: 0%;
     margin: 2%;
-    min-width:15%;
 }
 #c
 {
     margin: 0%;
     height:100%;
-    width:95%;
+    width:90%;
     border-radius:20px 0px 0px 20px;
     background-color: #4b6bad;
 }
@@ -193,7 +192,7 @@ body{
     
     display: inline-block;
     color: white;
-    margin-left: 7%;
+    margin-left: 6%;
     font-size: 1.5rem;
 }
 
@@ -547,6 +546,23 @@ body{
 {
 left:4.4%;
 }  
+.skill-name
+    {
+        color: black;
+        margin-left: 3%;
+        font-size: 1.1rem;
+    }
+    .skill-outer
+    {
+        height:14%;
+        width: 35%;
+        
+    }
+    #skills
+    {
+       flex-direction: column;
+        
+    }
 }
 @media screen and   (max-width:730px) {
     
@@ -600,5 +616,14 @@ left:4.4%;
     width:80%;
     margin-left: 0% ;
     justify-content: space-evenly;
+    }
+    .work-content
+    {
+       
+       width:80%;
+       height:40%;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
     }
 }
