@@ -206,7 +206,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#workexperince
+#experience
 {
     width:100%;
     height:98vh;
@@ -291,10 +291,9 @@ body{
 
 .work-heading
 {
-    height:30%;
+    height:50%;
     width:80%;
-   
-    text-align: right;
+   text-align: right;
 }
 .desig
 {
@@ -626,4 +625,11 @@ left:4.4%;
        flex-wrap: wrap;
        justify-content: space-between;
     }
+    .work-heading
+{
+    height:60%;
+    width:70%;
+   
+    
+}
 }

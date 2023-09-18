@@ -12,16 +12,16 @@
     </head>
     <body>
                <div id="intro">
-                <ul id="navigation" type="none">
+                <ul id="navigation" type="none" class="scroll">
                     <li><a href="#intro">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#workexperince">Experience</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="dropdown">
+                <div class="dropdown scroll">
                     <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bars"></i>
                     </button>
@@ -30,7 +30,7 @@
                       <li><a class="dropdown-item" href="#about">About </a></li>
                       <li><a class="dropdown-item" href="#skills">Skills </a></li>
                       <li><a class="dropdown-item" href="#education">Education </a></li>
-                      <li><a class="dropdown-item" href="#workexperince">Experience </a></li>
+                      <li><a class="dropdown-item" href="#experience">Experience </a></li>
                       <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
                       <li><a class="dropdown-item" href="#contact">Contact</a></li>       
                     </ul>
@@ -68,17 +68,17 @@
                     <div class="section-photo"><img src="./assets/skills.png"/></div>
                     <div class="section-name">Skills</div>
                 </div>
-                  <div class="section-content">
-                       <div class="skill-outer"><div id="c"><span class="skill-name">C++</span></div></div>
-                       <div class="skill-outer"><div id="html"><span class="skill-name">HTML</span></div></div>
-                       <div class="skill-outer"><div id="css"><span class="skill-name">CSS</span></div></div>
-                       <div class="skill-outer"><div id="javascript"><span class="skill-name">Javascript</span></div></div>
-                       <div class="skill-outer"><div id="nodejs"><span class="skill-name">Cancva</span></div></div>
-                       <div class="skill-outer"><div id="mongodb"><span class="skill-name">Bootstrap</span></div></div>
+                  <div id= "skill-container" class="section-content">
+                       <div class="skill-outer"><div data-bar-width='85' data-animation='false' id="c"><span class="skill-name">C++</span></div></div>
+                       <div class="skill-outer"><div data-bar-width='90' data-animation="false" id="html"><span class="skill-name">HTML</span></div></div>
+                       <div class="skill-outer"><div data-bar-width='85' data-animation="false" id="css"><span class="skill-name">CSS</span></div></div>
+                       <div class="skill-outer"><div data-bar-width='75' data-animation="false" id="javascript"><span class="skill-name">Javascript</span></div></div>
+                       <div class="skill-outer"><div data-bar-width='60' data-animation="false" id="nodejs"><span class="skill-name">Cancva</span></div></div>
+                       <div class="skill-outer"><div data-bar-width='65' data-animation="false" id="mongodb"><span class="skill-name">Bootstrap</span></div></div>
                      
                   </div> 
                </div>
-               <div id="workexperince">
+               <div id="experience">
                 <div class="section-heading">
                     <div class="section-photo"><img src="./assets/suitcase.png"/></div>
                     <div class="section-name">Work Experience</div>
@@ -279,7 +279,9 @@
                      </ul>
                   </div>
                </div>
+               
                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
                crossorigin="anonymous"></script>
+               <script type="text/Javascript" src="./resume.js"></script>
     </body>
 </html>
