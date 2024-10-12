@@ -1,57 +1,48 @@
-var progressbar = document.querySelectorAll('.skill-outer > div');
-var skillContainer = document.getElementById('skill-container');
-window.addEventListener('scroll',checkscroll)
+var progressbar = document.querySelectorAll(".skill-outer > div");
+var skillContainer = document.getElementById("skill-container");
+window.addEventListener("scroll", checkscroll);
 
-function initialiseBars()
-{
-    for(let bar of progressbar)
-    {
-        bar.style.width = 0 +'%';
-    }
+function initialiseBars() {
+  for (let bar of progressbar) {
+    bar.style.width = 0 + "%";
+  }
 }
 initialiseBars();
-function fillbar(bar)
-{
-   let counter=0;
-   let target = bar.getAttribute('data-bar-width');
-   let clear = setInterval(function()
-   {
-           if(counter>target)
-           {
-               clearInterval(clear);
-               return;
-           }
-           counter++;
-           //console.log(counter);
-           bar.style.width = counter + '%';
-           
-
-   },5)
-}
-function checkscroll()
-{
-
-    for(let bar of progressbar)
-    {
-        
-        let cordinates = bar.getBoundingClientRect();
-        //console.log(bar);
-        let animationNotdone = bar.getAttribute('data-animation');
-        //console.log(animationNotdone);
-        //console.log(!animationNotdone);
-        if(animationNotdone=='false' && cordinates.top<=window.innerHeight)
-        {          
-                  console.log("visible"); 
-                  fillbar(bar);
-                  bar.setAttribute('data-animation','true');
-                  
-        }
-        else if(cordinates.top>window.innerHeight)
-        {
-            bar.setAttribute('data-animation','false');
-        }
+function fillbar(bar) {
+  let counter = 0;
+  let target = bar.getAttribute("data-bar-width");
+  let clear = setInterval(function () {
+    if (counter > target) {
+      clearInterval(clear);
+      return;
     }
+    counter++;
+    //console.log(counter);
+    bar.style.width = counter + "%";
+  }, 5);
 }
+function checkscroll() {
+  for (let bar of progressbar) {
+    let cordinates = bar.getBoundingClientRect();
+    //console.log(bar);
+    let animationNotdone = bar.getAttribute("data-animation");
+    //console.log(animationNotdone);
+    //console.log(!animationNotdone);
+    if (animationNotdone == "false" && cordinates.top <= window.innerHeight) {
+      console.log("visible");
+      fillbar(bar);
+      bar.setAttribute("data-animation", "true");
+    } else if (cordinates.top > window.innerHeight) {
+      bar.setAttribute("data-animation", "false");
+    }
+  }
+}
+document.querySelectorAll(".image-box").forEach((box) => {
+  box.addEventListener("click", () => {
+    const index = box.getAttribute("data-index");
+    alert(`You clicked on Image ${index}`);
+  });
+});
 /*function fillbars()
 {
     for(let i=0;i<progressbar.length;i++)
@@ -91,22 +82,6 @@ function checkscroll()
 }
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //console.log("hello");
 //var tags = document.querySelectorAll('.scroll a');
